@@ -26,7 +26,7 @@ FILE *dstfile;
   if(argc>2){
     if (argc==4){
 // open source file
-      if ((srcfile_1 = fopen(argv[2],"r")) == NULL) {
+      if ((srcfile_1 = fopen(argv[2],"rb")) == NULL) {
         printf("ERROR: unable to open file %s\n",argv[1]);
 	     exit(1);
       }
@@ -40,7 +40,7 @@ FILE *dstfile;
 // close source file
       fclose(srcfile_1);
 // open source file
-      if ((srcfile_2 = fopen(argv[3],"r")) == NULL) {
+      if ((srcfile_2 = fopen(argv[3],"rb")) == NULL) {
         printf("ERROR: unable to open file %s\n",argv[1]);
 	     exit(1);
       }
